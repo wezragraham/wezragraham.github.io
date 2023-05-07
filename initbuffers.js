@@ -10,7 +10,7 @@ return {
     color: colorBuffer,
     indices: indexBuffer,
 };
-}
+
 
 function initPositionBuffer(gl) {
     // Create a buffer for the square's positions.
