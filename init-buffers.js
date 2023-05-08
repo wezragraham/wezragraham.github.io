@@ -49,30 +49,30 @@ function initPositionBuffer(gl) {
 }
 
 function initColorBuffer(gl) {
-  const faceColors = [
-    [1.0, 1.0, 1.6, 1.0], // Front face
-    [1.0, 0.4, 0.0, 1.0], // Back face
-    [0.3, 1.0, 0.3, 1.0], // Top face
-    [1.0, 0.0, 1.2, 1.0], // Bottom face
-    [1.0, 1.2, 0.0, 1.0], // Right face
-    [2.0, 0.0, 1.0, 1.0], // Left face
-  ];
+    const colors = [
+        1.0,
+        1.0,
+        1.0,
+        1.0, // white
+        1.0,
+        0.0,
+        0.0,
+        1.0, // red
+        0.0,
+        1.0,
+        0.0,
+        1.0, // green
+        0.0,
+        0.0,
+        1.0,
+        1.0, // blue
+    ];
 
-  // Convert the array of colors into a table for all the vertices.
+    const colorBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
 
-  var colors = [];
-
-  for (var j = 0; j < faceColors.length; ++j) {
-    const c = faceColors[j];
-    // Repeat each color four times for the four vertices of the face
-    colors = colors.concat(c, c, c, c);
-  }
-
-  const colorBuffer = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
-
-  return colorBuffer;
+    return colorBuffer;
 }
 
 function initIndexBuffer(gl) {
