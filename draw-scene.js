@@ -52,7 +52,7 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.3, // amount to rotate in radians
+    cubeRotation * -0.5, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
 
@@ -83,7 +83,7 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   {
     const vertexCount = 36;
     const type = gl.UNSIGNED_SHORT;
-    const offset = 0;
+    const offset = 1;
     gl.drawElements(gl.TRIANGLES, vertexCount, type, offset);
   }
 }
