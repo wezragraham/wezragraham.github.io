@@ -50,7 +50,7 @@ function initPositionBuffer(gl) {
 
 function initColorBuffer(gl) {
     const faceColors = [
-        [1.0, 1.0, 1.0, 1.0], 
+        [1.0, 0.7, 0.1, 0.2], 
         [1.0, 1.0, 0.8, 1.0], 
         [0.4, 1.0, 0.0, 0.3], 
         [0.0, 0.0, 1.0, 1.0], 
@@ -90,7 +90,7 @@ function initIndexBuffer(gl) {
     10,
     2,
     3, // front
-    4,
+    23,
     8,
     9,
     4,

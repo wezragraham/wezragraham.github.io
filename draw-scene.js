@@ -34,13 +34,13 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [-0.0, 0.8, -6.0]
+    [-0.0, 3.8, -6.0]
   ); // amount to translate
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.6, // amount to rotate in radians
+    cubeRotation *-0.6, // amount to rotate in radians
     [0, 0, 1]
   ); // axis to rotate around (Z)
   mat4.rotate(
@@ -52,7 +52,7 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * -0.5, // amount to rotate in radians
+    cubeRotation * 0.5, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
 
