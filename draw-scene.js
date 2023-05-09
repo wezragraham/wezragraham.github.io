@@ -1,5 +1,5 @@
 function drawScene(gl, programInfo, buffers, cubeRotation) {
-  gl.clearColor(0.0, 0.0, 0.0, 1.0); // Clear to black, fully opaque
+  gl.clearColor(1.0, 0.0, 0.0, 1.0); // Clear to red, fully opaque
   gl.clearDepth(1.0); // Clear everything
   gl.enable(gl.DEPTH_TEST); // Enable depth testing
   gl.depthFunc(gl.LEQUAL); // Near things obscure far things
@@ -13,7 +13,7 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   // Our field of view is 45 degrees, with a width/height
   // ratio that matches the display size of the canvas
   // and we only want to see objects between 0.1 units
-  // and 100 units away from the camera.
+  // and 80 units away from the camera.
 
   const fieldOfView = (45 * Math.PI) / 180; // in radians
   const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
@@ -34,13 +34,13 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [-0.0, 0.0, -6.0]
+    [-0.0, 0.8, -6.0]
   ); // amount to translate
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.9, // amount to rotate in radians
+    cubeRotation * 0.6, // amount to rotate in radians
     [0, 0, 1]
   ); // axis to rotate around (Z)
   mat4.rotate(

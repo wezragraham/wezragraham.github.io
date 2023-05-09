@@ -52,10 +52,10 @@ function initColorBuffer(gl) {
     const faceColors = [
         [1.0, 1.0, 1.0, 1.0], 
         [1.0, 1.0, 0.8, 1.0], 
-        [0.4, 1.0, 0.0, 1.0], 
+        [0.4, 1.0, 0.0, 0.3], 
         [0.0, 0.0, 1.0, 1.0], 
         [1.0, 1.0, 0.0, 1.0], 
-        [1.0, 0.0, 1.0, 1.0], 
+        [0.3, 0.3, 0.0, 1.0], 
     ];
 
     // Convert the array of colors into a table for all the vertices.
@@ -87,12 +87,12 @@ function initIndexBuffer(gl) {
     0,
     1,
     4,
-    0,
+    10,
     2,
     3, // front
     4,
     8,
-    6,
+    9,
     4,
     6,
     7, // back
