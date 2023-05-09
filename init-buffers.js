@@ -53,8 +53,8 @@ function initColorBuffer(gl) {
         [1.0, 0.7, 0.1, 0.2], 
         [1.0, 1.0, 0.8, 1.0], 
         [0.4, 1.0, 0.0, 0.3], 
-        [0.0, 0.0, 1.0, 1.0], 
-        [1.0, 1.0, 0.0, 1.0], 
+        [0.2, 0.0, 0.6, 1.0], 
+        [1.0, 0.5, 0.0, 1.0], 
         [0.3, 0.3, 0.0, 1.0], 
     ];
 
@@ -84,7 +84,7 @@ function initIndexBuffer(gl) {
   // position.
 
   const indices = [
-    0,
+    4,
     1,
     4,
     10,
@@ -108,7 +108,7 @@ function initIndexBuffer(gl) {
     12,
     14,
     15, // bottom
-    16,
+    22,
     17,
     18,
     16,
@@ -117,7 +117,7 @@ function initIndexBuffer(gl) {
     20,
     21,
     22,
-    20,
+    26,
     22,
     23, // left
   ];
