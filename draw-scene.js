@@ -34,7 +34,7 @@ function drawScene(gl, programInfo, buffers, cubeRotation) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [-0.0, 3.8, -6.0]
+    [-0.0, 0.8, -0.4]
   ); // amount to translate
 
   mat4.rotate(
