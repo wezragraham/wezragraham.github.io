@@ -32,6 +32,17 @@ body {
     display: flex;
 }
 
+.bodyHead {
+    background-color: #f08dd9;
+    opacity: .9;
+    width: 45%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
 p {
     background-color: #f08dd9;
     opacity: .9;
