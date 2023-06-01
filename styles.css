@@ -10,8 +10,26 @@ header {
     color: mediumspringgreen;
 }
 
+h2 {
+    background-color: #f08dd9;
+    opacity: .9;
+    width: 30%;
+    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
 body {
     background-color: #201ced;
+}
+
+.linksToPages {
+    display: flex;
 }
 
 p {
@@ -25,20 +43,6 @@ p {
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-}
-
-.linkToPage {
-    background-color: #f08dd9;
-    opacity: .8;
-    height: 60px;
-    width: 30%;
-    margin: 20px;
-    padding: 30px;
-    width: 30%;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    color: mediumspringgreen;
 }
 
 a:link {
