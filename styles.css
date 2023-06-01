@@ -3,7 +3,7 @@ header {
     opacity: .8;
     margin: auto;
     padding: 30px;
-    width: 30%;
+    width: 20%;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
@@ -12,26 +12,17 @@ header {
 
 body {
     background-color: #201ced;
-    opacity: .9;
-    height: 400px;
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 5px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
 }
 
 p {
-    background-color: #201ced;
+    background-color: #f08dd9;
     opacity: .9;
-    height: 400px;
     width: 60%;
+    margin: auto;
     margin-top: 50px;
     margin-top: 20px;
-    padding: 5px;
-    text-align: center;
+    padding: 15px;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
