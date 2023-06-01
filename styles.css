@@ -20,7 +20,20 @@ body {
     padding: 5px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: slategrey;
+    color: white;
+}
+
+p {
+    background-color: #201ced;
+    opacity: .9;
+    height: 400px;
+    width: 60%;
+    margin-top: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .linkToPage {
