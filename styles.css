@@ -3,7 +3,7 @@ header {
     opacity: .8;
     margin: auto;
     padding: 30px;
-    width: 600px;
+    width: 485px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
@@ -27,6 +27,8 @@ h2 {
 
 body {
     background-color: #201ced;
+    background-image: url("waves.jpg");
+    background-repeat: repeat;
 }
 
 .linksToPages {
